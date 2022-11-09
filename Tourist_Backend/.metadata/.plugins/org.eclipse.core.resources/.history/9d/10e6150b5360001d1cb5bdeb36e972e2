@@ -1,0 +1,37 @@
+package com.ca.demo;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.ca.entity.Tourist;
+import com.ca.repository.TouristRepository;
+import com.ca.service.TouristServiceImpl;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+class TouristsApplicationTests {
+	
+	@Autowired
+	private TouristServiceImpl ts;
+	
+	@MockBean
+	private TouristRepository trepo;
+	
+	@Test
+	public void getTouristsTest() {
+		when(trepo.findAll()).thenReturn(Stream.of(new Tourist(37,"Niharika","Pidithi","f",21,"kakinada",3),
+				new Tourist(73,"Agnes","Pidithi","f",21,"kakinada",3)).collect(Collectors.toList()));
+		assertEquals(2, ts.getTourists().size());
+	}
+
+}

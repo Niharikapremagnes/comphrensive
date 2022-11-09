@@ -1,0 +1,27 @@
+package com.ca.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ca.entity.Tourist;
+import com.ca.repository.TouristRepository;
+
+@Service
+public class TouristServiceImpl implements TouristService {
+	@Autowired
+	private TouristRepository trepo;
+
+	@Override
+	public List<Tourist> getAllTourists() {
+		return trepo.findByOrderByFirstnameDesc();
+	}
+
+	@Override
+	public String createTourist(Tourist tourist) {
+		trepo.save(tourist);
+		return "Successfully Added";
+	}
+
+}

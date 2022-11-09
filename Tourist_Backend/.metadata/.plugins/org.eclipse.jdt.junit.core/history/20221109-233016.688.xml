@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TouristsApplicationTests" project="Tourists" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.ca.demo.TouristsApplicationTests" time="0.001" displayname="TouristsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.ca.demo.TouristsApplicationTests]">
+    <testcase name="getTouristsTest" classname="com.ca.demo.TouristsApplicationTests" time="0.001" displayname="getTouristsTest()" uniqueid="[engine:junit-jupiter]/[class:com.ca.demo.TouristsApplicationTests]/[method:getTouristsTest()]"/>
+  </testsuite>
+</testrun>

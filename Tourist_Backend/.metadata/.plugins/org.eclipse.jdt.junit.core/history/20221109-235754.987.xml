@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TouristsApplicationTests" project="Tourists" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.ca.demo.TouristsApplicationTests" time="0.097" displayname="TouristsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.ca.demo.TouristsApplicationTests]">
+    <testcase name="createTouristTest" classname="com.ca.demo.TouristsApplicationTests" time="0.073" displayname="createTouristTest()" uniqueid="[engine:junit-jupiter]/[class:com.ca.demo.TouristsApplicationTests]/[method:createTouristTest()]"/>
+    <testcase name="getTouristsTest" classname="com.ca.demo.TouristsApplicationTests" time="0.009" displayname="getTouristsTest()" uniqueid="[engine:junit-jupiter]/[class:com.ca.demo.TouristsApplicationTests]/[method:getTouristsTest()]"/>
+    <testcase name="getAllDetailsTest" classname="com.ca.demo.TouristsApplicationTests" time="0.009" displayname="getAllDetailsTest()" uniqueid="[engine:junit-jupiter]/[class:com.ca.demo.TouristsApplicationTests]/[method:getAllDetailsTest()]"/>
+  </testsuite>
+</testrun>
